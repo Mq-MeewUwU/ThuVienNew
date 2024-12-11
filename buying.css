@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Kanit:ital,wght@0,500;0,600;0,700;0,900;1,300;1,500;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+GB+S+Guides:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost&family=Playwrite+IT+Trad:wght@100..400&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.buying {
+    text-align: right;
+    padding: 20px 20px;
+}
+.buying a {
+    text-decoration: none;
+    color: tomato;
+}
+.home-page form {
+    width: 50%;
+    margin: 0 auto;
+    backdrop-filter: blur(5px);
+}
+form legend {
+    margin-left: 50px;
+    padding: 0 10px;
+    font-family: "Playwrite IT Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: tomato;
+}
+fieldset {
+    border-image: linear-gradient(to left, rgb(60, 255, 0), tomato, rgb(241, 124, 188)) 1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: runbd;
+    animation-duration: 2.5s;
+    animation-delay: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-width: 3px;
+}
+.form-name {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+.form-name input {
+    width: 100%;
+    height: 35px;
+}
+.form-name,
+.form-email,
+.form-submit,
+.form-stt,
+.form-area {
+    padding: 20px 50px;
+}
+.home-page-buy {
+    display: flex;
+    align-items: center;
+    height: 900px;
+}
+.form-email input[type="email"],
+input[type="submit"] {
+    display: flex;
+    width: 100%;
+    height: 35px;
+}
+input[type="email"],
+input[type="text"] {
+    border-image: linear-gradient(
+            to right,
+            rgb(94, 230, 49),
+            rgb(223, 73, 46),
+            rgb(244, 229, 67)
+        )
+        1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: runfb;
+    animation-duration: 5s;
+    border-width: 3px;
+    animation-delay: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    outline: none;
+}
+input[type="submit"] {
+    background-image: linear-gradient(to right, aqua, tomato, orange);
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
+input[type="number"] {
+    background-image: linear-gradient(
+        to right,
+        rgb(39, 44, 44),
+        rgb(107, 87, 83),
+        rgb(132, 114, 81)
+    );
+    transition: 0.5s;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    border-image: linear-gradient(
+            to right,
+            rgb(94, 230, 49),
+            rgb(223, 73, 46),
+            rgb(244, 229, 67)
+        )
+        1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: runfb;
+    animation-duration: 5s;
+    border-width: 3px;
+    animation-delay: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    outline: none;
+}
+input[type="number"]::placeholder {
+    color: rgb(249, 245, 245);
+}
+input[type="submit"]:hover {
+    box-shadow: 2px 2px 10px 10px rgb(255, 255, 255);
+    color: white;
+    text-shadow: 2px 2px 10px white;
+}
+textarea {
+    width: 100%;
+    padding: 20px;
+    font-family: "Playwrite IT Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    border-image: linear-gradient(
+            to right,
+            rgb(94, 230, 49),
+            rgb(223, 73, 46),
+            rgb(244, 229, 67)
+        )
+        1;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: runfb;
+    animation-duration: 5s;
+    border-width: 3px;
+    animation-delay: none;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    outline: none;
+}
+input {
+    padding-left: 10px;
+    font-family: "Playwrite IT Trad", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+@keyframes runbd {
+    0% {
+        border-image: linear-gradient(to right, aqua, tomato, orange) 1;
+    }
+    25% {
+        border-image: linear-gradient(to bottom, aqua, tomato, orange) 1;
+    }
+    50% {
+        border-image: linear-gradient(to left, aqua, tomato, orange) 1;
+    }
+    75% {
+        border-image: linear-gradient(to top, aqua, tomato, orange) 1;
+    }
+    100% {
+        border-image: linear-gradient(to right, aqua, tomato, orange) 1;
+    }
+}
+
+@keyframes runfb {
+    0% {
+        border-image: linear-gradient(
+                to right,
+                rgb(94, 230, 49),
+                rgb(223, 73, 46),
+                rgb(244, 229, 67)
+            )
+            1;
+    }
+    25% {
+        border-image: linear-gradient(
+                to bottom,
+                rgb(94, 230, 49),
+                rgb(223, 73, 46),
+                rgb(244, 229, 67)
+            )
+            1;
+    }
+    50% {
+        border-image: linear-gradient(
+                to left,
+                rgb(94, 230, 49),
+                rgb(223, 73, 46),
+                rgb(244, 229, 67)
+            )
+            1;
+    }
+    75% {
+        border-image: linear-gradient(
+                to top,
+                rgb(94, 230, 49),
+                rgb(223, 73, 46),
+                rgb(244, 229, 67)
+            )
+            1;
+    }
+    100% {
+        border-image: linear-gradient(
+                to right,
+                rgb(94, 230, 49),
+                rgb(223, 73, 46),
+                rgb(244, 229, 67)
+            )
+            1;
+    }
+}
